@@ -1,42 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
+  
+  <!-- Primary Meta Tags -->
+  <title>Nguyễn Tâm Đức's Site - Web Developer Portfolio</title>
+  <meta name="title" content="Duc's Site">
+  <meta name="description" content="Hi, my name is Nguyễn Tâm Đức. I'm a Web Developer specializing in modern software architecture.">
+  <meta name="keywords" content="web, fullstack developer, software architecture, Nguyễn Tâm Đức">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="author" content="Nguyễn Tâm Đức">
 
-    body,
-    html {
-      height: 100%
-    }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tducn110.github.io/">
+  <meta property="og:title" content="Đức's Site">
+  <meta property="og:description" content="Hi, my name is Nguyễn Tâm Đức. I'm the Web Developer.">
+  <meta property="og:image" content="/banner.png">
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tducn110.github.io/">
+  <meta property="twitter:title" content="Đức's Site">
+  <meta property="twitter:description" content="Hi, my name is Nguyễn Tâm Đức. I'm the Web Developer.">
+  <meta property="twitter:image" content="/banner.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="DucSite" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      MyBrand
+<body class="bg-gray-50 text-gray-800">
+  
+  <!-- Nav (Optional but good for extensions) -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-xl font-bold text-teal-500">Tâm Đức.</span>
+      <div class="space-x-8 hidden md:flex">
+        <a href="#about-me" class="hover:text-teal-500 transition-colors font-medium">About</a>
+        <a href="#skills" class="hover:text-teal-500 transition-colors font-medium">Skills</a>
+        <a href="#projects" class="hover:text-teal-500 transition-colors font-medium">Projects</a>
+        <a href="#contact" class="hover:text-teal-500 transition-colors font-medium">Contact</a>
+      </div>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
+  </nav>
+
+  <!-- banner -->
+  <header
+    class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.png')] bg-cover bg-center bg-no-repeat relative">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="w-full lg:w-[80%] p-12 relative z-10 text-white">
+      <h1 class="text-6xl md:text-8xl font-bold mb-10 grid grid-col-1 gap-4 leading-tight">
+        <span class="banner-text">Hi, I'm <span class="text-teal-400">Nguyễn Tâm Đức</span></span>
+        <span class="banner-text text-gray-200 text-4xl md:text-6xl">A Passionate Web Developer</span>
+      </h1>
+
+      <a href="#about-me" class="banner-cta uppercase border-2 border-teal-400 px-10 py-4 hover:bg-teal-400 transition-all duration-300 cursor-pointer inline-block text-xl font-semibold">
+        Explore My Work
+      </a>
     </div>
-  </div>
+  </header>
+
+  <!-- about me -->
+  <section id="about-me" class="bg-teal-500 min-h-[70vh] w-full flex flex-col justify-center items-center py-20 px-6 text-white overflow-hidden">
+    <div class="max-w-5xl w-full">
+      <h2 class="section-title uppercase text-4xl lg:text-6xl text-center font-black mb-16 tracking-tighter opacity-20">PROFILE</h2>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-4 flex justify-center section-content">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-white/20 rounded-full animate-pulse"></div>
+            <img class="object-cover rounded-full border-8 border-white shadow-2xl w-64 h-64 relative z-10" src="/imgs/avatar.png" alt="Nguyễn Tâm Đức avatar" />
+          </div>
+        </div>
+        <div class="md:col-span-8 section-content">
+          <h3 class="text-3xl font-bold mb-6">About Me</h3>
+          <p class="text-xl font-light leading-relaxed mb-8">
+            Tôi là một lập trình viên nhiệt huyết với kiến thức chuyên sâu về kiến trúc phần mềm và phát triển web. Mục tiêu của tôi là tạo tạo ra những sản phẩm kỹ thuật số không chỉ đẹp mắt mà còn hiệu quả và dễ mở rộng.
+          </p>
+          <div class="flex space-x-4">
+             <a href="#" class="bg-white text-teal-600 px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all">Download CV</a>
+             <a href="#contact" class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-teal-600 transition-all">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-4xl font-bold text-center mb-16 underline decoration-teal-500 decoration-4 underline-offset-8">My Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 section-content">
+        <!-- Frontend -->
+        <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition-all border-b-4 border-teal-500">
+          <h3 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>Frontend</h3>
+          <ul class="space-y-3 text-gray-600 font-medium">
+            <li>HTML5 / CSS3</li>
+            <li>Tailwind CSS / PostCSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React / Vite</li>
+          </ul>
+        </div>
+        <!-- Backend -->
+        <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition-all border-b-4 border-teal-500">
+          <h3 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>Backend</h3>
+          <ul class="space-y-3 text-gray-600 font-medium">
+            <li>Node.js / Express</li>
+            <li>API Development</li>
+            <li>PostgreSQL / MongoDB</li>
+            <li>Software Architecture</li>
+          </ul>
+        </div>
+        <!-- Tools -->
+        <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition-all border-b-4 border-teal-500">
+          <h3 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>Tools</h3>
+          <ul class="space-y-3 text-gray-600 font-medium">
+            <li>Git / GitHub Actions</li>
+            <li>Docker / Deployment</li>
+            <li>VS Code Ecosystem</li>
+            <li>UI/UX Basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section id="projects" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-4xl font-bold text-center mb-16">Featured Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 section-content">
+        <!-- Project 1 -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+          <div class="h-48 bg-teal-100 relative overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span class="text-white font-bold">Vite + Tailwind</span>
+             </div>
+             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Personal Portfolio">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Personal Portfolio</h3>
+            <p class="text-gray-600 text-sm mb-4">Dự án website cá nhân chuyên nghiệp sử dụng công nghệ Tailwind CSS 4.0 và Vite.</p>
+            <div class="flex justify-between items-center">
+              <a href="#" class="text-teal-500 font-bold hover:underline">View Live</a>
+              <span class="px-3 py-1 bg-teal-100 text-teal-600 text-xs rounded-full">New</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+           <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="E-commerce Dashboard">
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-bold mb-2">S2S Dashboard</h3>
+             <p class="text-gray-600 text-sm mb-4">Hệ thống quản lý tài chính doanh nghiệp với biểu đồ trực quan và báo cáo chi tiết.</p>
+             <div class="flex justify-between items-center">
+               <a href="#" class="text-teal-500 font-bold hover:underline">Source Code</a>
+             </div>
+           </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500">
+           <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Software Architecture Blog">
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-bold mb-2">Architecture Blog</h3>
+             <p class="text-gray-600 text-sm mb-4">Blog chia sẻ kiến thức về lập trình và kiến trúc hệ thống hiện đại.</p>
+             <div class="flex justify-between items-center">
+               <a href="#" class="text-teal-500 font-bold hover:underline">Coming Soon</a>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="bg-white py-24 text-gray-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="section-title text-4xl lg:text-5xl font-bold mb-8">Contact Me</h2>
+      <p class="section-content text-xl text-gray-600 mb-12">
+        Bạn có dự án thú vị? Đừng ngần ngại liên hệ để chúng ta cùng tạo nên những điều tuyệt vời!
+      </p>
+      <a href="mailto:tducn110@gmail.com?subject=Hi, Đức I want to connect with you for work !!!&body=Please describe your work or projects requirements"
+        class="section-content group inline-flex items-center space-x-3 bg-teal-500 text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-teal-600 transition-all shadow-xl hover:-translate-y-1">
+        <span>Gửi Email Ngay</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-neutral-900 pt-20 pb-10 text-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+      <div class="flex space-x-8 mb-12">
+        <a href="#" target="_blank" rel="noopener" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-teal-500 transition-all">
+          <img class="w-6 h-6 invert" src="/imgs/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-teal-500 transition-all">
+          <img class="w-6 h-6 invert" src="/imgs/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-teal-500 transition-all">
+          <img class="w-6 h-6 invert" src="/imgs/github.svg" alt="GitHub" />
+        </a>
+      </div>
+      <div class="w-full text-center border-t border-white/10 pt-10">
+        <p class="text-gray-500">Designed & Built by <span class="text-teal-400 font-bold">Nguyễn Tâm Đức</span></p>
+        <p class="text-gray-600 mt-2 text-sm">© 2026 - All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/application.js"></script>
 </body>
+
 </html>
